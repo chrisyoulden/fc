@@ -5,13 +5,6 @@
   "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
   "scripts": {
-    "prepare": "npm run build",
-    "mocha": "nyc mocha",
-    "test": "npm run lint && npm run mocha",
-    "lint": "eslint --ext=.js,.ts src/ test/ examples/",
-    "lint-fix": "eslint --fix --ext=.js,.ts src/ test/ examples/",
-    "benchmark": "node ./benchmark",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "files": [
     "build/src/**"
