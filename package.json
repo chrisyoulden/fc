@@ -6,7 +6,6 @@
   "types": "./build/src/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "tsc",
     "mocha": "nyc mocha",
     "test": "npm run lint && npm run mocha",
     "lint": "eslint --ext=.js,.ts src/ test/ examples/",
