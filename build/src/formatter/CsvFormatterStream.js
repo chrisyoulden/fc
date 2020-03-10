@@ -7,7 +7,7 @@ const stream_1 = require("stream");
 const RowFormatter_1 = __importDefault(require("./formatter/RowFormatter"));
 class CsvFormatterStream extends stream_1.Transform {
     constructor(formatterOptions) {
-        super({ objectMode: formatterOptions.objectMode });
+        super({ objectMode: formatterOptions.objectMode, highWaterMark: formatterOptions.highWaterMark });
         this.hasWrittenBOM = false;
         this.formatterOptions = formatterOptions;
         this.rowFormatter = new RowFormatter_1.default(formatterOptions);

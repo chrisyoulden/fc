@@ -16,6 +16,7 @@ class FormatterOptions {
         this.writeBOM = false;
         this.BOM = '\ufeff';
         this.alwaysWriteHeaders = false;
+        this.highWaterMark = 16;
         Object.assign(this, opts || {});
         if (typeof ((_a = opts) === null || _a === void 0 ? void 0 : _a.quoteHeaders) === 'undefined') {
             this.quoteHeaders = this.quoteColumns;

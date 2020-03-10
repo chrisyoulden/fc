@@ -16,6 +16,7 @@ export interface FormatterOptionsArgs {
     writeBOM?: boolean;
     transform?: RowTransformFunction;
     alwaysWriteHeaders?: boolean;
+    highWaterMark?: number;
 }
 export declare class FormatterOptions {
     readonly objectMode: boolean;
@@ -33,6 +34,7 @@ export declare class FormatterOptions {
     readonly escapedQuote: string;
     readonly BOM: string;
     readonly alwaysWriteHeaders: boolean;
+    readonly highWaterMark: number;
     constructor(opts?: FormatterOptionsArgs);
 }
 export {};
